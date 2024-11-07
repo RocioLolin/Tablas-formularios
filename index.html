@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas y formularios</title>
+</head>
+<body>
+    <h1>Tablas y formularios</h1>
+    <h2>Tablas</h2>
+
+    <table border="2px">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+        </tr>
+
+        <tr>
+            <td>Rocio</td>
+            <td>López</td>
+            <td>rocio.lolin@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>Aldo</td>
+            <td>Ledesma</td>
+            <td>aldo@devf.mx</td>
+        </tr>
+    </table>
+
+    <h2>Formularios</h2>
+    <form action="archivo que procesa los datos php python o js">
+
+        <!--Atributos aceptados por el input de text: placeholder, value, required-->
+
+        <label for="nombre de usuario">Nombre:</label>
+        <input name="nombre de usuario" type="text" placeholder="Nombre">
+
+        <label for="correo">Email:</label>
+        <input name="correo" type="email">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" type="password" placeholder="Contraseña" required>
+        <br><br>
+        <label for="comentarios">Comentarios</label>
+        <br>
+        <textarea name="comentarios" rows="6" cols="50"></textarea>
+        <br><br>
+
+        <label for="sabores">Sabores</label>
+        <br>
+        <select name="Sabores">
+        <option value="Vainilla">Vainilla</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Fresa">Fresa</option>
+    </select>
+    <br><br>
+
+    <label for="genero">Género</label>
+    <br>
+    <input type="radio" name="genero">Masculino
+    <input type="radio" name="genero">Femenino
+    <br><br>
+
+    <label for="terminos">Aceptas nuestros términos y condiciones</label>
+    <br>
+    <input type="checkbox">Si
+    <br><br>
+
+    <button type="submit">Enviar</button>
+    
+
+
+
+
+        
+    </form>
+</body>
+</html>
